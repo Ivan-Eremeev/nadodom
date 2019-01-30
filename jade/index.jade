@@ -1,0 +1,142 @@
+extends blocks/base.jade
+
+block title 
+	title nadodom
+
+block content
+
+	.wrapper
+		header.header.wow.fadeIn
+			.header_logo
+				a(href="index.html").logo
+			menu.menu.menu-drop
+				nav.menu_nav
+					ul.menu_list
+						li.menu_item
+							a(href="#").menu_link Команда
+						li.menu_item
+							a(href="#").menu_link Готовые решения
+						li.menu_item
+							a(href="#").menu_link Контакты
+
+		section.first-screen.wow.fadeIn(data-wow-delay="0.3s")
+			img(src="img/first-screen.gif", alt="first screen")
+
+		section.philosophy
+			.line.wow.fadeInUp
+			h1.title.wow.fadeInUp философия
+			.row
+				.half-block.padding-right.wow.fadeInLeft
+					p Архитектурно-строительное бюро полного сервиса  «nadodom»  –креативный дизайн, технологичное проектирование и полный контроль строительства частных домов  и объектов недвижимости.
+					p Основным конкурентным преимуществом, позволяющим создавать действительно интересные и грамотные проекты и способы их реализации, является команда архитекторов, дизайнеров, проектировщиков и специалистов технического надзора.
+					p Мы уверены, что красивые дома делают мир лучше. Мы любим простые и продуманные решения, современные технологии и индивидуальный подход. Мы не любим устаревшие материалы и технологии, шаблонные мышления и необязательность.
+				.half-block.text-right.wow.fadeInRight.flex.flex-top.flex-center-mobile
+					.noise-vertical
+					img(src="img/philosophy-1.jpg", alt="image")
+			.row
+				.half-block.center-mobile.wow.fadeInLeft
+					img(src="img/philosophy-2.jpg", alt="image")
+				.half-block.padding-left.wow.fadeInRight
+					p Наши клиенты – люди, уставшие от стандартов, ценящие необычные решения. За любой эстетикой они видят, прежде всего, функциональность. Они ценят комплексный подход и щепетильны  в мелочах. У них отличный вкус.     
+					p Наша команда прорабатывает все, вплоть до мельчайших деталей, и таким образом достигаются цели, которые мы ставим перед собой - cоздать гармоничное пространство, в котором человек может чувствовать себя счастливым.
+			.row
+				.half-block.center-mobile.wow.fadeInLeft.flex.flex-bottom.flex-center-mobile
+					.noise-vertical
+					img(src="img/philosophy-3.jpg", alt="image")  
+				.half-block.padding-right.center-mobile.wow.fadeInRight.flex-center
+					.another
+
+		section.team
+			.line.wow.fadeInUp
+			h2.title.wow.fadeInUp команда
+			.row
+				.half-block.wow.fadeInLeft
+					p Команда архитектурно-строительного бюро полного сервиса NadoDom – это люди, которые прекрасно понимают друг друга и сходятся во взглядах на стиль и дизайн в целом. При этом у каждого – уникальный взгляд на мир, опыт и подход к делу. Вместе мы научились решать задачи быстро и эффективно.
+					.portrait
+						.portrait_description.mobile-visible Роман Поляков, арт-директор
+						img(src="img/team_2.jpg", alt="image")
+						.portrait_description.mobile-hide Роман Поляков, арт-директор
+					.noise-horizontal
+				.half-block.padding-left.wow.fadeInRight
+					.portrait.padding-left
+						.portrait_description Роман Поляков, арт-директор
+						img(src="img/team_1.jpg", alt="image")
+					.portrait.padding-top
+						.portrait_description Роман Поляков, арт-директор
+						img(src="img/team_3.jpg", alt="image")
+			.row
+				.half-block.wow.fadeInLeft
+					.portrait
+						.portrait_description Роман Поляков, арт-директор
+						img(src="img/team_1.jpg", alt="image")
+				.half-block.wow.fadeInRight
+					.portrait
+						.portrait_description Роман Поляков, арт-директор
+						img(src="img/team_1.jpg", alt="image")
+
+		section.done
+			.line.wow.fadeInUp
+			h2.title.wow.fadeInUp готовые решения
+			.done_block
+				.row
+					.half-block.padding10
+						p Модульное строительство — это возможность собрать дом, как конструктор, из блоков. Первое упоминание о нем относится к середине XX века.Собранное здание так же можно разобрать и перевезти на другой участок, и безпрепятсвенно перепродать, сохраняя за собой право на загородный участок.
+					.half-block.padding10
+						p Благодаря возможности сборки на труднодоступных участках, вы можете наслаждаться красивыми видами природы, в самых отдаленных уголках нашей страны. Так же, модульные дома можно использовать в качестве гостевых домиков, которые подарят комфорт вашим близким друзьям и родственникам, не беспокоясь о вашем личном пространстве.
+				.slider
+					.slider_box
+						img(src="img/slider_1.jpg", alt="image")
+						img(src="img/slider_2.jpg", alt="image")
+					.sliderButton.sliderButton_prev.icon-circle-left
+					.sliderButton.sliderButton_next.icon-circle-right
+			.done_img
+				img(src="img/done_1.jpg", alt="image")
+			p Для нас работа над домом — творческий процесс. Для вас — одно из важнейших в жизни решений. Поэтому мы делаем несколько проектов на выбор и готовы обсуждать их и корректировать до идеального результата.
+			.done_img
+				img(src="img/done_2.jpg", alt="image")
+			.done_img
+				img(src="img/done_3.jpg", alt="image")
+			.row.done_row
+				.half-block.padding10
+					p Внешний и внутренний облик дома и его обстановку продумывает одна команда в тесном сотрудничестве со строителями, которые будут воплощать задуманное. Получается гармоничное и технически выверенное пространство для счастливой жизни.
+				.half-block.padding10
+					p Индивидуальный концепт дома включает в себя разработку архитектурных решений, дизайн интерьеров, подборку аксессуаров,  полное сопровождение строительно-монтажных работ  включая авторский надзор, техническое и финансовое консультирование
+			.done_img.done_img--nofull
+				img(src="img/done_4.jpg", alt="image")
+			.done_half-img
+				.half-img
+					img(src="img/done_5.jpg", alt="image")
+				.half-img
+					img(src="img/done_6.jpg", alt="image")
+			.done_img.done_img--nofull
+				img(src="img/done_7.jpg", alt="image")
+			.row.done_row
+				.half-block.center-mobile
+					img(src="img/done_8.jpg", alt="image")
+				.half-block.flex-center
+					p Концепт включает в себя не только внешний и внутренний облик дома, но и мебель, технику, гарнитур. Наша команда прорабатывает все, вплоть до мельчайших деталей, и таким образом достигаются цели, которые мы ставим перед собой - cоздать гармоничное пространство, в котором человек может чувствовать себя счастливым.
+
+		section.callback
+			.line
+			h2.title обратная связь
+			.row
+				.half-block
+					p Мы с радостью ответим на все интересующие вас вопросы – в зависимости от вашего запроса вы найдете соответствующий контакт ниже.
+					a(href="#").callback_btn Напишите нам
+				.half-block
+
+
+
+block js
+	script(src="js/jquery-3.2.1.min.js")
+	//- script(src="js/jquery.fancybox.min.js")
+	script(src="js/slick.min.js")
+	//- script(src="js/jquery.matchHeight-min.js")
+	//- script(src="js/jquery.inputmask.bundle.min.js")
+	//- script(src="js/jquery.tinyscrollbar.min.js")
+	//- script(src="js/autosize.min.js")
+	//- script(src="js/tooltipster.bundle.min.js")
+	//- script(src="js/jquery.mmenu.all.js")
+	//- script(src="js/wow.min.js")
+	//- script(src="js/fullpage.min.js")
+	script(src="js/script.js")

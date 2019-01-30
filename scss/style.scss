@@ -7,7 +7,7 @@
 
 // Переменные для кастомизации Mixingrid
 $columns: 12; // Колличество колонок
-$max-width: 1200px; // Максимальная ширина контейнера
+$max-width: 1440px; // Максимальная ширина контейнера
 $gutter: 15px; // Расстояние между колонками
 $offset: 30px; // Поля контейнера
 $offset-sm: 15px; // Поля контейнера на мобилке
@@ -26,15 +26,25 @@ $break_xs: 576px;
 // $gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
 
 // Шрифты
-// @include font-face("EastAP", "../fonts/EastAP/EastAP", bold, italic);
+@include font-face("PT-Sans", "../fonts/PT_Sans/PTSans-Regular/PTSans-Regular", normal, normal);
+@include font-face("PT-Sans", "../fonts/PT_Sans/PTSans-Italic/PTSans-Italic", normal, italic);
+@include font-face("PT-Sans", "../fonts/PT_Sans/PTSans-Bold/PTSans-Bold", bold, normal);
+@include font-face("PT-Sans", "../fonts/PT_Sans/PTSans-BoldItalic/PTSans-BoldItalic", bold, italic);
+
+// Цвета
+$grey: #737373;
+$greyLight: #9b9b9b;
+$black: #000;
+$brown: #968f65;
 
 // Блоки
-@import 'blocks/menu';
+// @import 'blocks/menu';
 // @import 'blocks/mmenu';
-@import 'blocks/tabs';
-@import 'blocks/accordeon';
-@import 'blocks/form';
-@import 'blocks/modal';
-@import 'blocks/tooltipster-noir';
+// @import 'blocks/tabs';
+// @import 'blocks/accordeon';
+// @import 'blocks/form';
+// @import 'blocks/modal';
+// @import 'blocks/tooltipster-noir';
+@import 'icomoon.scss';
 
 @import 'template';
