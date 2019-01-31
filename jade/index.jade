@@ -50,13 +50,14 @@ block content
 			.line.wow.fadeInUp
 			h2.title.wow.fadeInUp команда
 			.row
-				.half-block
+				.half-block.team_por
 					p.wow.fadeInLeft Команда архитектурно-строительного бюро полного сервиса NadoDom – это люди, которые прекрасно понимают друг друга и сходятся во взглядах на стиль и дизайн в целом. При этом у каждого – уникальный взгляд на мир, опыт и подход к делу. Вместе мы научились решать задачи быстро и эффективно.
-					.portrait.wow.fadeInLeft
-						.portrait_description.mobile-visible Роман Поляков, арт-директор
-						img(src="img/team_2.jpg", alt="image")
-						.portrait_description.mobile-hide Роман Поляков, арт-директор
-					.noise-horizontal.wow.fadeInLeft
+					.team_bottom
+						.portrait.wow.fadeInLeft
+							.portrait_description.mobile-visible Роман Поляков, арт-директор
+							img(src="img/team_2.jpg", alt="image")
+							.portrait_description.mobile-hide Роман Поляков, арт-директор
+						.noise-horizontal.wow.fadeInLeft
 				.half-block.padding-left
 					.portrait.padding-left.wow.fadeInRight
 						.portrait_description Роман Поляков, арт-директор
@@ -89,81 +90,93 @@ block content
 						img(src="img/slider_2.jpg", alt="image")
 					.sliderButton.sliderButton_prev.icon-circle-left
 					.sliderButton.sliderButton_next.icon-circle-right
-			.done_img
-				img(src="img/done_1.jpg", alt="image").wow.fadeInLeft
-			p.wow.fadeInRight Для нас работа над домом — творческий процесс. Для вас — одно из важнейших в жизни решений. Поэтому мы делаем несколько проектов на выбор и готовы обсуждать их и корректировать до идеального результата.
-			.done_img.wow.fadeInLeft
-				img(src="img/done_2.jpg", alt="image")
-			.done_img.wow.fadeInRight
-				img(src="img/done_3.jpg", alt="image")
-			.row.done_row
-				.half-block.padding10
-					p.wow.fadeInLeft Внешний и внутренний облик дома и его обстановку продумывает одна команда в тесном сотрудничестве со строителями, которые будут воплощать задуманное. Получается гармоничное и технически выверенное пространство для счастливой жизни.
-				.half-block.padding10
-					p.wow.fadeInRight Индивидуальный концепт дома включает в себя разработку архитектурных решений, дизайн интерьеров, подборку аксессуаров,  полное сопровождение строительно-монтажных работ  включая авторский надзор, техническое и финансовое консультирование
-			.done_img.done_img--nofull.wow.fadeInLeft
-				img(src="img/done_4.jpg", alt="image")
-			.done_half-img
-				.half-img.wow.fadeInLeft
-					img(src="img/done_5.jpg", alt="image")
-				.half-img.wow.fadeInRight
-					img(src="img/done_6.jpg", alt="image")
-			.done_img.done_img--nofull.wow.fadeInRight
-				img(src="img/done_7.jpg", alt="image")
-			.row.done_row
-				.half-block.center-mobile
-					img(src="img/done_8.jpg", alt="image").wow.fadeInLeft
-				.half-block.flex-center
-					p.wow.fadeInRight Концепт включает в себя не только внешний и внутренний облик дома, но и мебель, технику, гарнитур. Наша команда прорабатывает все, вплоть до мельчайших деталей, и таким образом достигаются цели, которые мы ставим перед собой - cоздать гармоничное пространство, в котором человек может чувствовать себя счастливым.
+			.done-padding-left
+				.done_img
+					img(src="img/done_1.jpg", alt="image").wow.fadeInLeft
+				p.wow.fadeInRight Для нас работа над домом — творческий процесс. Для вас — одно из важнейших в жизни решений. Поэтому мы делаем несколько проектов на выбор и готовы обсуждать их и корректировать до идеального результата.
+				.done_img.wow.fadeInLeft
+					img(src="img/done_2.jpg", alt="image")
+				.done_img.wow.fadeInRight
+					img(src="img/done_3.jpg", alt="image")
+				.row.done_row
+					.half-block.padding10
+						p.wow.fadeInLeft Внешний и внутренний облик дома и его обстановку продумывает одна команда в тесном сотрудничестве со строителями, которые будут воплощать задуманное. Получается гармоничное и технически выверенное пространство для счастливой жизни.
+					.half-block.padding10
+						p.wow.fadeInRight Индивидуальный концепт дома включает в себя разработку архитектурных решений, дизайн интерьеров, подборку аксессуаров,  полное сопровождение строительно-монтажных работ  включая авторский надзор, техническое и финансовое консультирование
+				.done-flex
+					.done_img.done_img--nofull.wow.fadeInLeft
+						img(src="img/done_4.jpg", alt="image")
+					.noise-vertical.noise-vertical--shot.wow.fadeInRight
+				.done_half-img.flex-sb
+					.half-img.wow.fadeInLeft.padding-r50
+						img(src="img/done_5.jpg", alt="image")
+					.half-img.wow.fadeInRight
+						img(src="img/done_6.jpg", alt="image")
+				.done_img.wow.fadeInRight
+					img(src="img/done_7.jpg", alt="image")
+				.row.done_row
+					.half-block.center-mobile
+						img(src="img/done_8.jpg", alt="image").wow.fadeInLeft
+					.half-block.flex-center
+						p.wow.fadeInRight Концепт включает в себя не только внешний и внутренний облик дома, но и мебель, технику, гарнитур. Наша команда прорабатывает все, вплоть до мельчайших деталей, и таким образом достигаются цели, которые мы ставим перед собой - cоздать гармоничное пространство, в котором человек может чувствовать себя счастливым.
 
 		section.callback#contacts
 			.line.wow.fadeInUp
 			h2.title.wow.fadeInUp обратная связь
-			.row.done_row
-				.half-block.wow.fadeInLeft
-					p Мы с радостью ответим на все интересующие вас вопросы – в зависимости от вашего запроса вы найдете соответствующий контакт ниже.
-					a(href="form.html").callback_btn Напишите нам!
-					p.callback_text Вопросы архитектуры и дизайна
-					a(href="mailto:yulia@nado-dom.com").callback_link yulia@nado-dom.com
-					p.callback_text Технические и проектные вопросы
-					a(href="mailto:alexander@nado-dom.com").callback_link alexander@nado-dom.com
-					p.callback_text Вопросы строительного контроля и качества
-					a(href="mailto:yurii@nado-dom.com").callback_link yurii@nado-dom.com
-					p.callback_text Общие вопросы
-					a(href="mailto:contact@nado-dom.com").callback_link contact@nado-dom.com
-					p.callback_text Если вы ищите конкретного человека, ознакомьтесь с нашей командой
-					.social
-						a(href="#").icon-facebook
-						a(href="#").icon-instagram
-						a(href="#").icon-vk
-				.half-block.padding-left.wow.fadeInRight
-					p.callback_text Денис Василевский
-					p.callback_text Со-владелец, административное управление
-					a(href="mailto:denis@nado-dom.com").callback_link denis@nado-dom.com
-					p.callback_text Александр Ольшин
-					p.callback_text Технический директор
-					a(href="mailto:alexander@nado-dom.com").callback_link alexander@nado-dom.com
-					p.callback_text Юлия Елисеева
-					p.callback_text Архитектор, дизайнер
-					a(href="mailto:yulia@nado-dom.com").callback_link yulia@nado-dom.com
-					p.callback_text Наталья Харитонова
-					p.callback_text Архитектор, дизайнер, ландшафтный дизайн
-					a(href="mailto:natalia@nado-dom.com").callback_link natalia@nado-dom.com
-					p.callback_text Анна Готлиб
-					p.callback_text Координатор проектов
-					a(href="mailto:ann@nado-dom.com").callback_link ann@nado-dom.com
-					p.callback_text Юрий Семенов
-					p.callback_text Авторский надзор, контроль качества
-					a(href="mailto:yurii@nado-dom.com").callback_link yurii@nado-dom.com
-					p.callback_text Сильва Гонян
-					p.callback_text Интерьерный дизайн
-					a(href="mailto:silva@nado-dom.com").callback_link silva@nado-dom.com
-					p.callback_text Анна Смирнова
-					p.callback_text Копирайтер, автор, редактор
-					a(href="mailto:anna@nado-dom.com").callback_link anna@nado-dom.com
-					p.callback_text Николай Домнич
-					p.callback_text Менеджер проекта
-					a(href="mailto:nikolay@nado-dom.com").callback_link nikolay@nado-dom.com
+			.done-padding-left
+				.row.done_row
+					.half-block.wow.fadeInLeft.callback_por
+						p Мы с радостью ответим на все интересующие вас вопросы – в зависимости от вашего запроса вы найдете соответствующий контакт ниже.
+						a(href="form.html").callback_btn Напишите нам!
+						p.callback_text Вопросы архитектуры и дизайна
+						a(href="mailto:yulia@nado-dom.com").callback_link yulia@nado-dom.com
+						p.callback_text Технические и проектные вопросы
+						a(href="mailto:alexander@nado-dom.com").callback_link alexander@nado-dom.com
+						p.callback_text Вопросы строительного контроля и качества
+						a(href="mailto:yurii@nado-dom.com").callback_link yurii@nado-dom.com
+						p.callback_text Общие вопросы
+						a(href="mailto:contact@nado-dom.com").callback_link contact@nado-dom.com
+						p.callback_text Если вы ищите конкретного человека, ознакомьтесь с нашей командой
+						.social.mobile-hide
+							div
+								a(href="#").icon-facebook
+								a(href="#").icon-instagram
+								a(href="#").icon-vk
+							.noise-horizontal.noise-horizontal--shot
+					.half-block.padding-left.wow.fadeInRight
+						p.callback_text Денис Василевский
+						p.callback_text Со-владелец, административное управление
+						a(href="mailto:denis@nado-dom.com").callback_link denis@nado-dom.com
+						p.callback_text Александр Ольшин
+						p.callback_text Технический директор
+						a(href="mailto:alexander@nado-dom.com").callback_link alexander@nado-dom.com
+						p.callback_text Юлия Елисеева
+						p.callback_text Архитектор, дизайнер
+						a(href="mailto:yulia@nado-dom.com").callback_link yulia@nado-dom.com
+						p.callback_text Наталья Харитонова
+						p.callback_text Архитектор, дизайнер, ландшафтный дизайн
+						a(href="mailto:natalia@nado-dom.com").callback_link natalia@nado-dom.com
+						p.callback_text Анна Готлиб
+						p.callback_text Координатор проектов
+						a(href="mailto:ann@nado-dom.com").callback_link ann@nado-dom.com
+						p.callback_text Юрий Семенов
+						p.callback_text Авторский надзор, контроль качества
+						a(href="mailto:yurii@nado-dom.com").callback_link yurii@nado-dom.com
+						p.callback_text Сильва Гонян
+						p.callback_text Интерьерный дизайн
+						a(href="mailto:silva@nado-dom.com").callback_link silva@nado-dom.com
+						p.callback_text Анна Смирнова
+						p.callback_text Копирайтер, автор, редактор
+						a(href="mailto:anna@nado-dom.com").callback_link anna@nado-dom.com
+						p.callback_text Николай Домнич
+						p.callback_text Менеджер проекта
+						a(href="mailto:nikolay@nado-dom.com").callback_link nikolay@nado-dom.com
+						.social.mobile-visible
+							div
+								a(href="#").icon-facebook
+								a(href="#").icon-instagram
+								a(href="#").icon-vk
+							.noise-horizontal.noise-horizontal--shot
 
 
 

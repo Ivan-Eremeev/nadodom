@@ -1,13 +1,19 @@
 body {
 	font-family: "PT-Sans";
-	font-size: 16px;
+	font-size: 23px;
 	color: $grey;
+	@media (max-width: $break_sm) {
+		font-size: 16px;
+	}
 }
 a {
 	transition: .3s;
 }
 p {
 	padding-bottom: 20px;
+	@media (max-width: $break_sm) {
+		padding-bottom: 5px;
+	}
 }
 .wrapper {
 	@include wrapper();
@@ -46,8 +52,15 @@ p {
 .flex-bottom {
 	align-items: flex-end;
 }
+.flex-sb {
+	display: flex;
+	justify-content: space-between;
+}
 .padding10 {
 	padding: 10px;
+}
+.padding-r50 {
+	padding-right: 50px;
 }
 
 .header {
@@ -132,6 +145,12 @@ p {
 	&:hover {
 		background-image: url(../img/noise-hover.jpg);
 	}
+	&--shot {
+		width: 100px;
+		height: 300px;
+		margin-left: 50px;
+		margin-right: 0;
+	}
 	@media (max-width: $break_sm) {
 		display: none;
 	}
@@ -142,6 +161,9 @@ p {
 	transition: .3s;
 	&:hover {
 		background-image: url(../img/noise-hover.jpg);
+	}
+	&--shot {
+		max-width: 300px;
 	}
 	@media (max-width: $break_sm) {
 		display: none;
@@ -154,13 +176,20 @@ p {
 	@media (max-width: $break_md) {
 		margin: 30px 0;
 	}
+	@media (max-width: $break_sm) {
+		margin: 10px 0;
+	}
 }
 .title {
 	padding-bottom: 80px;
 	font-family: "Times";
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: normal;
 	color: $black;
+	@media (max-width: $break_sm) {
+		font-size: 20px;
+		padding-bottom: 20px;
+	}
 }
 .row {
 	display: flex;
@@ -169,6 +198,9 @@ p {
 	@media (max-width: $break_md) {
 		@include row-flex();
 		padding-left: 0;
+	}
+	@media (max-width: $break_sm) {
+		padding-bottom: 20px;
 	}
 }
 .half-block {
@@ -198,17 +230,31 @@ p {
 }
 
 .team {
-
+	&_bottom {
+		position: absolute;
+		bottom: 0;
+	}
+	&_por {
+		position: relative;
+	}
+	@media (max-width: $break_sm) {
+		&_bottom {
+			position: static;
+		}
+	}
 }
 .portrait {
 	padding: 5px;
 	&_description {
 		padding: 10px 20px 20px 20px;
-		font-size: 14px;
+		font-size: 20px;
 		color: $greyLight;
 	}
 	@media (max-width: $break_sm) {
 		text-align: center;
+		&_description {
+			font-size: 14px;
+		}
 	}
 }
 .another {
@@ -249,9 +295,14 @@ p {
 	&_half-img {
 		display: flex;
 	}
+	&-flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	@media (max-width: $break_sm) {
 		&_img {
-			padding: 10px 0;
+			padding: 20px 0;
 		}
 		&_half-img {
 			flex-wrap: wrap;
@@ -260,9 +311,8 @@ p {
 	}
 }
 .half-img {
-	padding-right: 50px;
 	@media (max-width: $break_sm) {
-		padding-right: 0;
+		padding: 20px 0 0 0;
 	}
 }
 .slider {
@@ -306,7 +356,7 @@ p {
 	&_btn {
 		display: inline-block;
 		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-bottom: 100px;
 		border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     padding: 13px 40px;
@@ -331,9 +381,24 @@ p {
 			transform: translate(10px,0);
 		}
 	}
+	&_por {
+		position: relative;
+		padding-bottom: 150px;
+	}
+	@media (max-width: $break_sm) {
+		&_por {
+			padding-bottom: 20px;
+		}
+		&_btn {
+			margin-bottom: 20px;
+		}
+	}
 }
 .social {
 	margin-top: 20px;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
 	a {
 		display: inline-block;
 		padding: 10px;
@@ -347,5 +412,14 @@ p {
 		&:first-child {
 			margin-left: -10px;
 		}
+	}
+	@media (max-width: $break_sm) {
+		position: static;
+	}
+}
+.done-padding-left {
+	padding-left: 150px;
+	@media (max-width: $break_sm) {
+		padding-left: 0;
 	}
 }
