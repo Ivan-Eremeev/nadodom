@@ -1,6 +1,6 @@
 body {
 	font-family: "PT-Sans";
-	font-size: 25px;
+	font-size: 16px;
 	color: $grey;
 }
 a {
@@ -157,7 +157,8 @@ p {
 }
 .title {
 	padding-bottom: 80px;
-	font-size: 30px;
+	font-family: "Times";
+	font-size: 20px;
 	font-weight: normal;
 	color: $black;
 }
@@ -203,7 +204,7 @@ p {
 	padding: 5px;
 	&_description {
 		padding: 10px 20px 20px 20px;
-		font-size: 20px;
+		font-size: 14px;
 		color: $greyLight;
 	}
 	@media (max-width: $break_sm) {

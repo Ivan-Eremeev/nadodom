@@ -30,6 +30,7 @@ $break_xs: 576px;
 @include font-face("PT-Sans", "../fonts/PT_Sans/PTSans-Italic/PTSans-Italic", normal, italic);
 @include font-face("PT-Sans", "../fonts/PT_Sans/PTSans-Bold/PTSans-Bold", bold, normal);
 @include font-face("PT-Sans", "../fonts/PT_Sans/PTSans-BoldItalic/PTSans-BoldItalic", bold, italic);
+@include font-face("Times", "../fonts/TimesNewRoman/TimesNewRomanPSMT", normal, normal);
 
 // Цвета
 $grey: #737373;
