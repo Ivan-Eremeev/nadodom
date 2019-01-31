@@ -30,9 +30,9 @@ block content
 					p Архитектурно-строительное бюро полного сервиса  «nadodom»  –креативный дизайн, технологичное проектирование и полный контроль строительства частных домов  и объектов недвижимости.
 					p Основным конкурентным преимуществом, позволяющим создавать действительно интересные и грамотные проекты и способы их реализации, является команда архитекторов, дизайнеров, проектировщиков и специалистов технического надзора.
 					p Мы уверены, что красивые дома делают мир лучше. Мы любим простые и продуманные решения, современные технологии и индивидуальный подход. Мы не любим устаревшие материалы и технологии, шаблонные мышления и необязательность.
-				.half-block.text-right.wow.fadeInRight.flex.flex-top.flex-center-mobile
-					.noise-vertical
-					img(src="img/philosophy-1.jpg", alt="image")
+				.half-block.text-right.flex.flex-top.flex-center-mobile
+					.noise-vertical.wow.fadeInRight
+					img(src="img/philosophy-1.jpg", alt="image").wow.fadeInRight(data-wow-delay=".5s")
 			.row
 				.half-block.center-mobile.wow.fadeInLeft
 					img(src="img/philosophy-2.jpg", alt="image")
@@ -40,9 +40,9 @@ block content
 					p Наши клиенты – люди, уставшие от стандартов, ценящие необычные решения. За любой эстетикой они видят, прежде всего, функциональность. Они ценят комплексный подход и щепетильны  в мелочах. У них отличный вкус.     
 					p Наша команда прорабатывает все, вплоть до мельчайших деталей, и таким образом достигаются цели, которые мы ставим перед собой - cоздать гармоничное пространство, в котором человек может чувствовать себя счастливым.
 			.row
-				.half-block.center-mobile.wow.fadeInLeft.flex.flex-bottom.flex-center-mobile
-					.noise-vertical
-					img(src="img/philosophy-3.jpg", alt="image")  
+				.half-block.center-mobile.flex.flex-bottom.flex-center-mobile
+					.noise-vertical.wow.fadeInLeft(data-wow-delay="1s")
+					img(src="img/philosophy-3.jpg", alt="image").wow.fadeInLeft
 				.half-block.padding-right.center-mobile.wow.fadeInRight.flex-center
 					.another
 
@@ -50,18 +50,18 @@ block content
 			.line.wow.fadeInUp
 			h2.title.wow.fadeInUp команда
 			.row
-				.half-block.wow.fadeInLeft
-					p Команда архитектурно-строительного бюро полного сервиса NadoDom – это люди, которые прекрасно понимают друг друга и сходятся во взглядах на стиль и дизайн в целом. При этом у каждого – уникальный взгляд на мир, опыт и подход к делу. Вместе мы научились решать задачи быстро и эффективно.
-					.portrait
+				.half-block
+					p.wow.fadeInLeft Команда архитектурно-строительного бюро полного сервиса NadoDom – это люди, которые прекрасно понимают друг друга и сходятся во взглядах на стиль и дизайн в целом. При этом у каждого – уникальный взгляд на мир, опыт и подход к делу. Вместе мы научились решать задачи быстро и эффективно.
+					.portrait.wow.fadeInLeft
 						.portrait_description.mobile-visible Роман Поляков, арт-директор
 						img(src="img/team_2.jpg", alt="image")
 						.portrait_description.mobile-hide Роман Поляков, арт-директор
-					.noise-horizontal
-				.half-block.padding-left.wow.fadeInRight
-					.portrait.padding-left
+					.noise-horizontal.wow.fadeInLeft
+				.half-block.padding-left
+					.portrait.padding-left.wow.fadeInRight
 						.portrait_description Роман Поляков, арт-директор
 						img(src="img/team_1.jpg", alt="image")
-					.portrait.padding-top
+					.portrait.padding-top.wow.fadeInRight
 						.portrait_description Роман Поляков, арт-директор
 						img(src="img/team_3.jpg", alt="image")
 			.row
@@ -79,64 +79,96 @@ block content
 			h2.title.wow.fadeInUp готовые решения
 			.done_block
 				.row
-					.half-block.padding10
+					.half-block.padding10.wow.fadeInLeft
 						p Модульное строительство — это возможность собрать дом, как конструктор, из блоков. Первое упоминание о нем относится к середине XX века.Собранное здание так же можно разобрать и перевезти на другой участок, и безпрепятсвенно перепродать, сохраняя за собой право на загородный участок.
-					.half-block.padding10
+					.half-block.padding10.wow.fadeInRight
 						p Благодаря возможности сборки на труднодоступных участках, вы можете наслаждаться красивыми видами природы, в самых отдаленных уголках нашей страны. Так же, модульные дома можно использовать в качестве гостевых домиков, которые подарят комфорт вашим близким друзьям и родственникам, не беспокоясь о вашем личном пространстве.
-				.slider
+				.slider.wow.fadeInUp
 					.slider_box
 						img(src="img/slider_1.jpg", alt="image")
 						img(src="img/slider_2.jpg", alt="image")
 					.sliderButton.sliderButton_prev.icon-circle-left
 					.sliderButton.sliderButton_next.icon-circle-right
 			.done_img
-				img(src="img/done_1.jpg", alt="image")
-			p Для нас работа над домом — творческий процесс. Для вас — одно из важнейших в жизни решений. Поэтому мы делаем несколько проектов на выбор и готовы обсуждать их и корректировать до идеального результата.
-			.done_img
+				img(src="img/done_1.jpg", alt="image").wow.fadeInLeft
+			p.wow.fadeInRight Для нас работа над домом — творческий процесс. Для вас — одно из важнейших в жизни решений. Поэтому мы делаем несколько проектов на выбор и готовы обсуждать их и корректировать до идеального результата.
+			.done_img.wow.fadeInLeft
 				img(src="img/done_2.jpg", alt="image")
-			.done_img
+			.done_img.wow.fadeInRight
 				img(src="img/done_3.jpg", alt="image")
 			.row.done_row
 				.half-block.padding10
-					p Внешний и внутренний облик дома и его обстановку продумывает одна команда в тесном сотрудничестве со строителями, которые будут воплощать задуманное. Получается гармоничное и технически выверенное пространство для счастливой жизни.
+					p.wow.fadeInLeft Внешний и внутренний облик дома и его обстановку продумывает одна команда в тесном сотрудничестве со строителями, которые будут воплощать задуманное. Получается гармоничное и технически выверенное пространство для счастливой жизни.
 				.half-block.padding10
-					p Индивидуальный концепт дома включает в себя разработку архитектурных решений, дизайн интерьеров, подборку аксессуаров,  полное сопровождение строительно-монтажных работ  включая авторский надзор, техническое и финансовое консультирование
-			.done_img.done_img--nofull
+					p.wow.fadeInRight Индивидуальный концепт дома включает в себя разработку архитектурных решений, дизайн интерьеров, подборку аксессуаров,  полное сопровождение строительно-монтажных работ  включая авторский надзор, техническое и финансовое консультирование
+			.done_img.done_img--nofull.wow.fadeInLeft
 				img(src="img/done_4.jpg", alt="image")
 			.done_half-img
-				.half-img
+				.half-img.wow.fadeInLeft
 					img(src="img/done_5.jpg", alt="image")
-				.half-img
+				.half-img.wow.fadeInRight
 					img(src="img/done_6.jpg", alt="image")
-			.done_img.done_img--nofull
+			.done_img.done_img--nofull.wow.fadeInRight
 				img(src="img/done_7.jpg", alt="image")
 			.row.done_row
 				.half-block.center-mobile
-					img(src="img/done_8.jpg", alt="image")
+					img(src="img/done_8.jpg", alt="image").wow.fadeInLeft
 				.half-block.flex-center
-					p Концепт включает в себя не только внешний и внутренний облик дома, но и мебель, технику, гарнитур. Наша команда прорабатывает все, вплоть до мельчайших деталей, и таким образом достигаются цели, которые мы ставим перед собой - cоздать гармоничное пространство, в котором человек может чувствовать себя счастливым.
+					p.wow.fadeInRight Концепт включает в себя не только внешний и внутренний облик дома, но и мебель, технику, гарнитур. Наша команда прорабатывает все, вплоть до мельчайших деталей, и таким образом достигаются цели, которые мы ставим перед собой - cоздать гармоничное пространство, в котором человек может чувствовать себя счастливым.
 
 		section.callback
-			.line
-			h2.title обратная связь
-			.row
-				.half-block
+			.line.wow.fadeInUp
+			h2.title.wow.fadeInUp обратная связь
+			.row.done_row
+				.half-block.wow.fadeInLeft
 					p Мы с радостью ответим на все интересующие вас вопросы – в зависимости от вашего запроса вы найдете соответствующий контакт ниже.
-					a(href="#").callback_btn Напишите нам
-				.half-block
+					a(href="#").callback_btn Напишите нам!
+					p.callback_text Вопросы архитектуры и дизайна
+					a(href="mailto:yulia@nado-dom.com").callback_link yulia@nado-dom.com
+					p.callback_text Технические и проектные вопросы
+					a(href="mailto:alexander@nado-dom.com").callback_link alexander@nado-dom.com
+					p.callback_text Вопросы строительного контроля и качества
+					a(href="mailto:yurii@nado-dom.com").callback_link yurii@nado-dom.com
+					p.callback_text Общие вопросы
+					a(href="mailto:contact@nado-dom.com").callback_link contact@nado-dom.com
+					p.callback_text Если вы ищите конкретного человека, ознакомьтесь с нашей командой
+					.social
+						a(href="#").icon-facebook
+						a(href="#").icon-instagram
+						a(href="#").icon-vk
+				.half-block.padding-left.wow.fadeInRight
+					p.callback_text Денис Василевский
+					p.callback_text Со-владелец, административное управление
+					a(href="mailto:denis@nado-dom.com").callback_link denis@nado-dom.com
+					p.callback_text Александр Ольшин
+					p.callback_text Технический директор
+					a(href="mailto:alexander@nado-dom.com").callback_link alexander@nado-dom.com
+					p.callback_text Юлия Елисеева
+					p.callback_text Архитектор, дизайнер
+					a(href="mailto:yulia@nado-dom.com").callback_link yulia@nado-dom.com
+					p.callback_text Наталья Харитонова
+					p.callback_text Архитектор, дизайнер, ландшафтный дизайн
+					a(href="mailto:natalia@nado-dom.com").callback_link natalia@nado-dom.com
+					p.callback_text Анна Готлиб
+					p.callback_text Координатор проектов
+					a(href="mailto:ann@nado-dom.com").callback_link ann@nado-dom.com
+					p.callback_text Юрий Семенов
+					p.callback_text Авторский надзор, контроль качества
+					a(href="mailto:yurii@nado-dom.com").callback_link yurii@nado-dom.com
+					p.callback_text Сильва Гонян
+					p.callback_text Интерьерный дизайн
+					a(href="mailto:silva@nado-dom.com").callback_link silva@nado-dom.com
+					p.callback_text Анна Смирнова
+					p.callback_text Копирайтер, автор, редактор
+					a(href="mailto:anna@nado-dom.com").callback_link anna@nado-dom.com
+					p.callback_text Николай Домнич
+					p.callback_text Менеджер проекта
+					a(href="mailto:nikolay@nado-dom.com").callback_link nikolay@nado-dom.com
 
 
 
 block js
 	script(src="js/jquery-3.2.1.min.js")
-	//- script(src="js/jquery.fancybox.min.js")
 	script(src="js/slick.min.js")
-	//- script(src="js/jquery.matchHeight-min.js")
-	//- script(src="js/jquery.inputmask.bundle.min.js")
-	//- script(src="js/jquery.tinyscrollbar.min.js")
-	//- script(src="js/autosize.min.js")
-	//- script(src="js/tooltipster.bundle.min.js")
-	//- script(src="js/jquery.mmenu.all.js")
-	//- script(src="js/wow.min.js")
-	//- script(src="js/fullpage.min.js")
+	script(src="js/wow.min.js")
 	script(src="js/script.js")

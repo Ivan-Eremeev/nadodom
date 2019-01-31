@@ -267,7 +267,7 @@ p {
 .slider {
 	position: relative;
 	padding-left: 150px;
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 	&Button {
 		font-size: 80px;
 		color: #ccc;
@@ -298,5 +298,53 @@ p {
 	}
 	@media (max-width: $break_md) {
 		padding-left: 0;
+	}
+}
+
+.callback {
+	&_btn {
+		display: inline-block;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 13px 40px;
+    text-decoration: none;
+    color: $grey;
+    &:hover {
+    	background: $brown;
+	    color: white;
+	    border-color: transparent;
+    }
+	}
+	&_text {
+		padding-bottom: 0;
+	}
+	&_link {
+		display: inline-block;
+		margin-bottom: 20px;
+		color: $grey;
+		text-decoration: none;
+		&:hover {
+			color: $brown;
+			transform: translate(10px,0);
+		}
+	}
+}
+.social {
+	margin-top: 20px;
+	a {
+		display: inline-block;
+		padding: 10px;
+		margin-right: 10px;
+		text-decoration: none;
+		color: $black;
+		&:hover {
+			color: $brown;
+			transform: translate(0,-1px);
+		}
+		&:first-child {
+			margin-left: -10px;
+		}
 	}
 }
