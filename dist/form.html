@@ -1,0 +1,91 @@
+<!-- Note :
+   - You can modify the font style and form style to suit your website. 
+   - Code lines with comments ���Do not remove this code���  are required for the form to work properly, make sure that you do not remove these lines of code. 
+   - The Mandatory check script can modified as to suit your business needs. 
+   - It is important that you test the modified form before going live.-->
+<div id='crmWebToEntityForm' style='width:600px;margin:auto;'>
+   <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
+   <form action='https://crm.zoho.eu/crm/WebToLeadForm' name=WebToLeads159549000000135710 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory159549000000135710()' accept-charset='UTF-8'>
+
+	 <!-- Do not remove this code. -->
+	<input type='text' style='display:none;' name='xnQsjsdp' value='6a0445a9ff00e12d39b7c1ecac528f6bd2186278e89eed4499283d2d9dcbf79d'/>
+	<input type='hidden' name='zc_gad' id='zc_gad' value=''/>
+	<input type='text' style='display:none;' name='xmIwtLD' value='6904c64c30da054676f4a0252ceadf18c94370376b5e7bd4c8de075f0bc1beb4'/>
+	<input type='text' style='display:none;'  name='actionType' value='TGVhZHM='/>
+
+	<input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;nado-dom.com&#x2f;index.html' /> 
+	 <!-- Do not remove this code. -->
+	<style>
+		tr , td { 
+			padding:6px;
+			border-spacing:0px;
+			border-width:0px;
+			}
+	</style>
+	<table style='width:600px;background-color:white;color:black'>
+
+	<tr><td colspan='2' style='text-align:left;color:black;font-family:Tahoma;font-size:14px;'><strong>&#x41e;&#x442;&#x43f;&#x440;&#x430;&#x432;&#x44c;&#x442;&#x435; &#x43d;&#x430;&#x43c; &#x441;&#x43e;&#x43e;&#x431;&#x449;&#x435;&#x43d;&#x438;&#x435;&#x21;</strong></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Tahoma;width:200px;'>ФИО<span style='color:red;'>*</span></td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='100' name='Company' /></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Tahoma;width:200px;'>&#x420;&#x435;&#x433;&#x438;&#x43e;&#x43d;</td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='100' name='State' /></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Tahoma;width:200px;'>Эл.почта<span style='color:red;'>*</span></td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='80' name='Last Name' /></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Tahoma;width:200px;'>&#x422;&#x435;&#x43b;&#x435;&#x444;&#x43e;&#x43d;</td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='255' name='Website' /></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Tahoma;width:200px;'>Описание<span style='color:red;'>*</span> </td><td> <textarea name='Description' maxlength='32000' style='width:250px;'>&nbsp;</textarea></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Tahoma;width:200px;'>&#x41e;&#x442;&#x43a;&#x430;&#x437; &#x43e;&#x442; &#x43f;&#x43e;&#x43b;&#x443;&#x447;&#x435;&#x43d;&#x438;&#x44f; &#x441;&#x43e;&#x43e;&#x431;&#x449;&#x435;&#x43d;&#x438;&#x439; </td><td style='width:250px;' ><input type='checkbox'  name='Email Opt Out' /></td></tr>
+
+	<tr><td colspan='2' style='text-align:center; padding-top:15px;font-size:12px;'>
+		<input style='font-size:12px;color:black'  type='submit' value='Отправить' />
+		<input  type='reset' style='font-size:12px;color:black' value='Сброс' />
+	    </td>
+	</tr>
+   </table>
+	<script>
+ 	  var mndFileds=new Array('Company','Last Name','Description');
+ 	  var fldLangVal=new Array('ФИО','Эл.почта','Описание');
+		var name='';
+		var email='';
+
+ 	  function checkMandatory159549000000135710() {
+		for(i=0;i<mndFileds.length;i++) {
+		  var fieldObj=document.forms['WebToLeads159549000000135710'][mndFileds[i]];
+		  if(fieldObj) {
+			if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+			 if(fieldObj.type =='file')
+				{ 
+				 alert('Выберите файл для отправки.'); 
+				 fieldObj.focus(); 
+				 return false;
+				} 
+			alert(fldLangVal[i] +' не может быть пустым.'); 
+   	   	  	  fieldObj.focus();
+   	   	  	  return false;
+			}  else if(fieldObj.nodeName=='SELECT') {
+  	   	   	 if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+				alert(fldLangVal[i] +' не может отсутствовать.'); 
+				fieldObj.focus();
+				return false;
+			   }
+			} else if(fieldObj.type =='checkbox'){
+ 	 	 	 if(fieldObj.checked == false){
+				alert('Please accept  '+fldLangVal[i]);
+				fieldObj.focus();
+				return false;
+			   } 
+			 } 
+			 try {
+			     if(fieldObj.name == 'Last Name') {
+				name = fieldObj.value;
+ 	 	 	    }
+			} catch (e) {}
+		    }
+		}
+	     }
+	   
+</script>
+	</form>
+</div>
